@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8"> 
+    <title>Document</title>
+</head>
+<body>  
+    <div id="n"></div>
+    <div id="irfan"></div>
+    <div id="king"></div>
+    <div id="rakib"></div>
+    <div id="v"></div>
+    <div id="c"></div>
+    <script>
+        var a = 10>5;
+        var b = 20>8;
+        var c = a && b;
+        document.getElementById("n").innerHTML = c
+        console.log(c);
+
+
+
+        var a = 10<5;
+        var b = 20>8;
+        var c = a && b;
+        console.log(c);
+        document.getElementById("irfan").innerHTML = c
+
+        var a = 10<5;
+        var b = 20>8;
+        var c = a || b;
+        console.log(c);
+        document.getElementById("king").innerHTML = c
+
+
+        var a = 10>5;
+        var b = 20>8;
+        var c = a || b;
+        console.log(c);
+        document.getElementById("rakib").innerHTML = c
+
+        var a = 10<5;
+        var b = 20<8;
+        var c = a || b;
+        console.log(c);
+        document.getElementById("v").innerHTML = c
+
+
+        var a = 10<5;
+        var b = 20<8;
+        var c = (!a || b);
+        console.log(c);
+        document.getElementById("c").innerHTML = c
+    </script>
+</body>
+</html>
