@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div id="v0"></div>
+     <div id="irfan00"></div> 
+     <div id="irfan01"></div>
+     <div id="irfan02"></div>
+     <div id="irfan03"></div> 
+     <div id="v1"></div> 
+     <div id="irfan10"></div> 
+     <div id="irfan11"></div>
+     <div id="irfan12"></div>
+     <div id="irfan13"></div>
+     <div id="v2"></div>
+     <div id="irfan20"></div> 
+     <div id="irfan21"></div> 
+     <div id="irfan22"></div>
+     <div id="irfan23"></div>
+
+     <!-- <div id="v2"></div>  
+      <div id="v3"></div> 
+     <div id="v4"></div> 
+     <div id="v5"></div>  -->
+
+   <script>
+    // for(i=0; i<2; i++)
+    // {
+        // document.getElementById("v"+i).innerHTML = (i +"<strong> outer loop </strong>");
+        // for(j=0; j<2; j++)
+        //  {
+            // document.getElementById("irfan"+i+j).innerHTML = j + "inner loop";
+        //  }
+    // }
+
+
+    for(s=0; s<3; s++)
+    {
+        document.getElementById("v"+s).innerHTML = (s +"<strong> irfan khan </strong>");
+        console.log(s);
+        for(h=0; h<4; h++)
+        {
+            document.getElementById("irfan"+s+h).innerHTML = h + "inner loop";
+            console.log(h);
+        } 
+    }
+   </script> 
+</body>
+</html>
