@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="rakib"></div> --> 
+    <!-- <div id="king"></div> -->
+    <div id="v0"></div>
+    <div id="irfan00"></div> 
+    <div id="irfan01"></div>
+    <div id="irfan02"></div>
+    <div id="irfan03"></div> 
+    <div id="irfan04"></div>
+    <div id="v1"></div>  
+    <div id="irfan10"></div>  
+    <div id="irfan11"></div> 
+    <div id="irfan12"></div> 
+    <div id="irfan13"></div> 
+    <div id="irfan14"></div> 
+    <div id="v2"></div> 
+    <div id="irfan20"></div>  
+    <div id="irfan21"></div>  
+    <div id="irfan22"></div> 
+    <div id="irfan23"></div> 
+    <div id="irfan24"></div> 
+    <script>
+        var i = 0;
+        while(i<3)
+        {
+         document.getElementById("v"+i).innerHTML = (i+ "<strong> outer loop </strong>");
+        // console.log(i);
+            var j = 0;
+            while(j<5)
+            {
+                document.getElementById("irfan"+i+j).innerHTML = j+ "inner loop";
+                j++;
+                // console.log(j);
+            }
+            i++;
+        }
+    </script>
+</body>
+</html>
